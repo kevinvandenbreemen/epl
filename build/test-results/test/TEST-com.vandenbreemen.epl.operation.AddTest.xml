@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.vandenbreemen.epl.operation.AddTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-12-05T21:39:56" hostname="kevin-newlaptop" time="0.015">
-  <properties/>
-  <testcase name="shouldAddToExistingValueInStorageIfPrsent()" classname="com.vandenbreemen.epl.operation.AddTest" time="0.014"/>
-  <testcase name="shouldStoreResultOfAddition()" classname="com.vandenbreemen.epl.operation.AddTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

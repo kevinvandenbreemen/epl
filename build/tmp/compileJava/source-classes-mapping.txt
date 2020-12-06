@@ -1,8 +1,0 @@
-com/vandenbreemen/epl/system/System.java
- com.vandenbreemen.epl.system.System
-com/vandenbreemen/epl/operation/Operation.java
- com.vandenbreemen.epl.operation.Operation
-com/vandenbreemen/epl/system/Memory.java
- com.vandenbreemen.epl.system.Memory
-com/vandenbreemen/epl/operation/Add.java
- com.vandenbreemen.epl.operation.Add
