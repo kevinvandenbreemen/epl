@@ -13,11 +13,19 @@ public class Add implements Operation {
         Optional<Double> lastResultOpt = system.getMemory().getResult();
         if(lastResultOpt.isPresent()) {
             sum += lastResultOpt.get();
+        } else if (input == null || input.length == 0) {
+            return;
         }
 
-        for (double i : input) {
-            sum += i;
+        if(input == null || input.length == 0) {
+            sum += sum;
         }
+        else {
+            for (double i : input) {
+                sum += i;
+            }
+        }
+
         system.getMemory().setResult(sum);
     }
 }

@@ -5,6 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 class AddTest {
 
@@ -28,6 +29,19 @@ class AddTest {
         system.getMemory().setResult(1.0);
         add.perform(system, 1.0);
         assertEquals(2.0, system.getMemory().getResult().get());
+    }
+
+    @Test
+    public void shouldAddLastResultToItselfIfNoArgument() {
+        system.getMemory().setResult(1.0);
+        add.perform(system);
+        assertEquals(2.0, system.getMemory().getResult().get());
+    }
+
+    @Test
+    public void shouldDoNothingIfNoResultInMemoryAndNoArguments() {
+        add.perform(system);
+        assertFalse(system.getMemory().getResult().isPresent());
     }
 
 }
