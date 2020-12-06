@@ -16,4 +16,8 @@ public class Memory {
     public void setResult(double result) {
         this.result = result;
     }
+
+    void clearResult() {
+        this.result = null;
+    }
 }
