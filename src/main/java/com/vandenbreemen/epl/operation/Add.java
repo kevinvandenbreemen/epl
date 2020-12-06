@@ -1,6 +1,7 @@
 package com.vandenbreemen.epl.operation;
 
 import com.vandenbreemen.epl.system.System;
+import org.apache.commons.lang3.ArrayUtils;
 
 import java.util.Optional;
 
@@ -13,11 +14,11 @@ public class Add implements Operation {
         Optional<Double> lastResultOpt = system.getMemory().getResult();
         if(lastResultOpt.isPresent()) {
             sum += lastResultOpt.get();
-        } else if (input == null || input.length == 0) {
+        } else if (ArrayUtils.isEmpty(input)) {
             return;
         }
 
-        if(input == null || input.length == 0) {
+        if(ArrayUtils.isEmpty(input)) {
             sum += sum;
         }
         else {
